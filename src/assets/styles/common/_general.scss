@@ -10,7 +10,8 @@ body {
 }
 body {
   //@include container(964);
-  font-family: $quicksand;
+  // font-family: $quicksand;
+  font-family: $helvetica;
   // background: $darkslategray;
 }
 .container {
@@ -42,4 +43,7 @@ li {
 
 .blue {
   color: $blue;
+}
+.link {
+  @include link()
 }

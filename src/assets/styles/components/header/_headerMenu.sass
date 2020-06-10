@@ -5,6 +5,7 @@ $header_height: 45px
   height: $header_height
   background-color: $grey
   width: 100%
+  border-bottom: 1px solid #d8d8d8
 
   &__container
     height: $header_height
@@ -23,23 +24,16 @@ $header_height: 45px
     margin-right: 14px
     white-space: nowrap
 
-  &__link
-    color: $grey-text
-    font-size: 14px
-    transition: .2s
-     
-    &:hover
-      color: $red
+  .link
+    @include link($color: $grey-text)
 
   &__btn
     outline: none
-    color: #ffffff
     padding: 5px 14px
     border-radius: 3px
-    background-color: lighten($blue, 5%)
-
+    background-color: lighten($blue, 4%)
+    @include link($color: #fff, $hoverColor: #fff)
 
     &:hover
-      color: #ffffff
       background-color: $blue
 
