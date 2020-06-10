@@ -1,0 +1,45 @@
+$header_height: 45px
+
+.menu
+  padding: 0 18px
+  height: $header_height
+  background-color: $grey
+  width: 100%
+
+  &__container
+    height: $header_height
+    @include isFlex($align: center, $justify: space-between, $wrap: nowrap)
+    
+  &__list
+    width: 100%
+    @include isFlex($justify: flex-start, $wrap: nowrap)
+    
+    &_left
+      max-width: 405px
+    &_right
+      max-width: calc(186px + 156px)
+
+  &__item
+    margin-right: 14px
+    white-space: nowrap
+
+  &__link
+    color: $grey-text
+    font-size: 14px
+    transition: .2s
+     
+    &:hover
+      color: $red
+
+  &__btn
+    outline: none
+    color: #ffffff
+    padding: 5px 14px
+    border-radius: 3px
+    background-color: lighten($blue, 5%)
+
+
+    &:hover
+      color: #ffffff
+      background-color: $blue
+
