@@ -1,0 +1,28 @@
+.header
+  height: 160px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: #fff
+  
+  &__list
+    height: 48px
+    @include isFlex($align: center, $justify: flex-start)
+
+  &__item
+    padding: 5px 12px 4px
+
+  &__item_logo
+    padding: 5px 0 4px
+    margin-left: -6px
+
+  &__logo
+    width: 115px
+    height: 40px
+    display: block
+    margin: 0
+    padding: 0
+
+  @import "./headerOption";
+

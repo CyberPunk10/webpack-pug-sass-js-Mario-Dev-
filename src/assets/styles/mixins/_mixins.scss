@@ -20,3 +20,15 @@
   margin: $margin;
   padding: $padding;
 }
+
+@mixin link($color: $blue, $weight: 400, $fontSize: 14, $hoverColor: $red) {
+  color: $color;
+  transition: .2s;
+  font-weight: $weight;
+  font-size: $fontSize + px;
+
+  &:hover {
+    color: $hoverColor;
+  }
+
+}

@@ -9,9 +9,14 @@ body {
   height: 100%;
 }
 body {
-  @include container(1200);
+  //@include container(964);
   font-family: $quicksand;
+  font-size: 14px;
   // background: $darkslategray;
+}
+.container {
+  @include container(964);
+  width: 100%;
 }
 h1,
 h2,
@@ -22,6 +27,7 @@ h6 {
   margin: 0;
 }
 a {
+  display: inline-block;
   text-decoration: none;
 }
 p {
@@ -33,4 +39,11 @@ ul {
 }
 li {
   list-style: none;
+}
+
+.blue {
+  color: $blue;
+}
+.link {
+  @include link()
 }

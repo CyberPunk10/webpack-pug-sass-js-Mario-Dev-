@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 @import "normalize.css";
 
 /*
@@ -7,20 +8,19 @@
 @import "./base/normalize.scss";
 
 /*
-  Utils
+  mixins
 */
 @import "./mixins/mixins";
 
-@import "./utils/dimensions";
-@import "./utils/colors";
-@import "./utils/keyframes";
+/*
+  Utils
+*/
+@import "./utils/index_utils";
 
 /*
   Components
 */
-@import "./components/footer";
-@import "./components/button";
-@import "./components/link";
+@import "./components/index_components";
 
 /*
   Layout

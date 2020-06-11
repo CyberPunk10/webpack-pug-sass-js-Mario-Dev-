@@ -68,7 +68,7 @@ module.exports = (env) => {
           ],
         },
         {
-          test: /\.scss$/,
+          test: /\.s[ac]ss$/,
           use: [
             env === "development"
               ? "style-loader"

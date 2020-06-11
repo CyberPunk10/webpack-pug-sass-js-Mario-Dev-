@@ -1,0 +1,27 @@
+.header__option
+  ul.header__categories
+    li.header__category.header__category_first
+      select(name="")#category.header__select
+        option(value="0" disabled selected) Любая категория 
+        option(value="1").header__optiontitle Транспорт
+
+    li.header__category.header__category_second
+      input(type="text" placeholder="Поиск по объявлениям").header__input
+
+    li.header__category.header__category_three
+      select(name="")#cities.header__select
+
+    li.header__category.header__category_four
+      select(name="")#metro.header__select
+        option(value="0" disabled selected) Метро 
+
+    li.header__category.header__category_five
+      button(type="button").header__button Найти
+
+  .header__checkboxes
+    label.header__label
+      input(type="checkbox" name="").header__checkbox
+      span.header__span только в названиях 
+    label.header__label
+      input(type="checkbox" name="").header__checkbox
+      span.header__span только с фото
