@@ -44,3 +44,27 @@
 //   data: allData,
 // });
 // newRender.render();
+
+console.log('Проверка')
+
+const cities = ['Санкт-Петербург', 'Санкт-Петербург и ЛО', 'Ленинградская область', 'Россия']
+const category = ['Автомобили', 'Мотоциклы', 'Грузовики']
+const metro = ['Озерки', 'Площадь Восстания', 'Гостинный двор']
+
+const citiesId = document.querySelector('#cities')
+const categoryId = document.querySelector('#category')
+const metroId = document.querySelector('#metro')
+
+function setOptions(id, options) {
+  options.forEach(option => {
+    id.innerHTML += `<option>${option}</option>`;
+  });
+}
+
+// set cities
+setOptions(citiesId, cities);
+// set category
+setOptions(categoryId, category);
+// set metro
+setOptions(metroId, metro);
+

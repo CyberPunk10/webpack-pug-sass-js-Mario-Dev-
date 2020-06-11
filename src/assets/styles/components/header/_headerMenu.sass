@@ -26,10 +26,13 @@ $header_height: 45px
 
   .link
     @include link($color: $grey-text)
+    
+  .blue
+    @include link($color: $blue)
 
   &__btn
     outline: none
-    padding: 5px 14px
+    padding: 5.5px 14px 8px
     border-radius: 3px
     background-color: lighten($blue, 4%)
     @include link($color: #fff, $hoverColor: #fff)
